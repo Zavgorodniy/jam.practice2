@@ -4,4 +4,6 @@
     <string name="decrement">-</string>
     <string name="increment">+</string>
     <string name="order">order</string>
+    <string name="price_title">PRICE</string>
+    <string name="minimal_order">Sorry, minimal order is 1!</string>
 </resources>

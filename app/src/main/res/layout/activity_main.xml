@@ -20,19 +20,20 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
 
         <Button
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:text="@string/decrement"
             android:id="@+id/bt_decrement"
-            android:onClick="onClick" />
+            android:onClick="changeQuantity" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
             android:id="@+id/tv_quantity_num"
             android:padding="10dp"
             android:textSize="16sp" />
@@ -42,14 +43,21 @@
             android:layout_height="48dp"
             android:text="@string/increment"
             android:id="@+id/bt_increment"
-            android:onClick="onClick" />
+            android:onClick="changeQuantity" />
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="price"
-        android:id="@+id/tv_price" />
+        android:text="@string/price_title"
+        android:id="@+id/tv_price_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_price"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp" />
 
     <Button
         android:layout_width="wrap_content"
